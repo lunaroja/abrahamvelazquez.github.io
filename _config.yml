@@ -35,12 +35,15 @@ menu:
   -
     title: Résumé
     href: /resume/
+-
+    title: Twitter
+    href: http://twitter.com/lunaroja
+-
+    title: LinkedIn
+    href: http://linkedin.com/abrahamvelazquez
   -
     title: GitHub
     href: http://github.com/abrahamvelazquez
-  -
-    title: LinkedIn
-    href: http://linkedin.com/abrahamvelazquez
   -
     title: CodePen
     href: http://codepen.io/abrahamvelazquez
