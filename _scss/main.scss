@@ -1,0 +1,23 @@
+@import "kasper";
+@import "syntax" ;
+
+.blog-logo img {
+	border-radius: 100%;
+	height: 50px;
+}
+.menu-button .burger {
+	margin-right: 0;
+}
+.nav-title a {
+	text-decoration: none;
+
+}
+.post-footer {
+	margin-top: 8rem;
+}
+
+.nav .subscribe-button {
+	color: #B8B8B8 !important; // Gross
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-color: transparent;
+}
