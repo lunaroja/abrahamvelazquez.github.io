@@ -1,7 +1,8 @@
-name: Abraham Velázquez Tello
-description: "Front End Developer based in San Francisco."
+name: Abraham Velázquez Tello
+description: "Front End Developer based in San Francisco."
 logo: //gravatar.com/avatar/8ed5818f87bbd8bf79e7b36c440e45b9?s=200
 url: 'http://abraham.mx'
+sourcecode: 'https://github.com/abrahamvelazquez/abrahamvelazquez.github.io'
 
 baseurl: /
 permalink: /:year/:month/:title

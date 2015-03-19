@@ -42,7 +42,7 @@
                   <img src="{{ site.logo }}" alt="Blog Logo" />
               </a>
           {% endif %}
-          <a class="menu-button" href="#" aria-lable="Menu"><span class="burger">☰</span></a>
+          <a class="menu-button" href="#" aria-lable="Menu"><span class="burger">☰</span><span class="word">Menu</span></a>
       </nav>
 
     {% if page.title == 'Home' %}
@@ -66,12 +66,8 @@
     </main>
 
     <footer class="site-footer clearfix">
-      <section class="copyright">
-        <a href="{{ site.baseurl }}">{{ site.name }}</a> &copy;
-              {{date format="YYYY"}} &bull; All rights reserved.
-      </section>
-      <section class="poweredby">Made with Jekyll and hosted on GitHub.
-      </section>
+      <section class="copyright">All Content &copy; {{ date format="YYYY" }} &bull; All rights reserved, unless otherwise noted.</section>
+      <section class="poweredby"><a href="{{ site.sourcecode }}">Source Code is MIT Licensed</a></section>
     </footer>
 
   </div>
@@ -79,19 +75,20 @@
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script type="text/javascript" src="/assets/js/index.js"></script>
 
-  <!-- Google Analytics Tracking code -->
+  {% if site.google_analytics %}
   <script type="text/javascript">
 
-    // var _gaq = _gaq || [];
-    // _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-    // _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+    _gaq.push(['_trackPageview']);
 
-    // (function() {
-    //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    // })();
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 
   </script>
+  {% endif %}
 </body>
 </html>

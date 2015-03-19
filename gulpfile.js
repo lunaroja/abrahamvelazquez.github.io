@@ -8,6 +8,18 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
+gulp.task('sass', function () {
+    return gulp.src('_scss/main.scss')
+        .pipe(sass({
+            includePaths: ['scss'],
+            onError: browserSync.notify
+        }))
+        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8'], { cascade: true }))
+        .pipe(gulp.dest('assets/css'))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest('_site/assets/css'))
+});
+
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
     return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
@@ -24,18 +36,6 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
             baseDir: '_site'
         }
     });
-});
-
-gulp.task('sass', function () {
-    return gulp.src('_scss/main.scss')
-        .pipe(sass({
-            includePaths: ['scss'],
-            onError: browserSync.notify
-        }))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('assets/css'))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('_site/assets/css'))
 });
 
 gulp.task('watch', function () {
