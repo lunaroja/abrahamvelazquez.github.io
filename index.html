@@ -15,7 +15,7 @@ cover: false
         <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     </header>
     <section class="post-excerpt">
-        {{ post.content }}
+        {{ post.excerpt }} <a href="{{ post.url }}" class="read-more" rel="nofollow">Continue Reading.</a>
     </section>
     <footer class="post-meta">
         {{ site.name }}

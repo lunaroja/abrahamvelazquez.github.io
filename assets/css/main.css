@@ -1776,6 +1776,9 @@ body:not(.post-template) .post-title {
   .menu-button .burger {
     font-size: 18px; } }
 
+.post-excerpt p {
+  display: inline; }
+
 .nav-title a {
   text-decoration: none; }
 
