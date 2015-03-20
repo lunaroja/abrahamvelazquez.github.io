@@ -1,6 +1,6 @@
 # Abraham.mx
 
-This is my personal website. It’s generated with Jekyll/GH-Pages and Markdown. The design is a fork of the [Casper Theme](https://github.com/TryGhost/Casper/) from Ghost.
+This is my personal website. It’s generated with Jekyll on GitHub Pages and uses Markdown. The design is a fork of the [Casper Theme](https://github.com/TryGhost/Casper/) from Ghost.
 
 ## Build System
 To develop locally it uses [Jekyll](http://jekyllrb.com/), [NPM](https://docs.npmjs.com/getting-started/installing-node), [Gulp](http://gulpjs.com/), [LibSass](http://libsass.org/), [Autoprefixer](https://github.com/postcss/autoprefixer) and [BrowserSync](http://www.browsersync.io/)
