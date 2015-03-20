@@ -25,7 +25,10 @@
 
   <div class="site-wrapper">
 
-    <header class="main-header {% if page.title != 'Home' %}post-head{% endif %} {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <header {% if page.cover != '' and page.cover != null %}style="background-image: url({{ page.cover }})"{% endif %}
+      class="main-header
+        {% if page.title != 'Home' %}post-head{% endif %}
+        {% if page.cover == null %}no-cover{% endif %}">
       <nav class="main-nav {% if page.cover or page.title == 'Home' %}overlay{% endif %} clearfix">
           {% if page.title == 'Home' %}
               <a class="blog-logo" href="{{ site.baseurl }}">

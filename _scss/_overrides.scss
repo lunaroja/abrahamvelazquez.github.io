@@ -1,30 +1,44 @@
 
 .blog-logo img {
-	border-radius: 100%;
-	height: 50px;
+  border-radius: 100%;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0;
 }
 
 @media only screen and (max-width: 500px) {
-	.menu-button {
-		font-size: 16px;
-		margin-top: 12px;
-	}
-	.menu-button .burger {
-		font-size: 18px;
-	}
+  .menu-button {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+  .menu-button .burger {
+    font-size: 18px;
+  }
 }
 .post-excerpt p {
-	display: inline;
+  display: inline;
 }
 .nav-title a {
-	text-decoration: none;
+  text-decoration: none;
 }
 .post-footer {
-	margin-top: 8rem;
+  margin-top: 8rem;
 }
 
 .nav .subscribe-button {
-	color: #B8B8B8 !important; // Gross
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	background-color: transparent;
+  color: #B8B8B8 !important; // Gross
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+}
+
+.home-template {
+  .main-header {
+    background-image: url('../images/index_large.jpg');
+    @media only screen and (max-width: 1440px) {
+      background-image: url('../images/index_medium.jpg');
+    }
+    @media only screen and (max-width: 500px) {
+      background-image: url('../images/index_small.jpg');
+    }
+  }
 }

@@ -1767,7 +1767,9 @@ body:not(.post-template) .post-title {
 
 .blog-logo img {
   border-radius: 100%;
-  height: 50px; }
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0; }
 
 @media only screen and (max-width: 500px) {
   .menu-button {
@@ -1789,3 +1791,12 @@ body:not(.post-template) .post-title {
   color: #B8B8B8 !important;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: transparent; }
+
+.home-template .main-header {
+  background-image: url('../images/index_large.jpg'); }
+  @media only screen and (max-width: 1440px) {
+    .home-template .main-header {
+      background-image: url('../images/index_medium.jpg'); } }
+  @media only screen and (max-width: 500px) {
+    .home-template .main-header {
+      background-image: url('../images/index_small.jpg'); } }
