@@ -55,14 +55,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 
 gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch([ 'index.html',
-                 '_config.yml',
-                 '_layouts/*.html',
-                 '_includes/*.html',
-                 '_drafts/*.md',
-                 '_posts/*.md',
-                 'pages/*.md'
-                ], ['jekyll-rebuild']);
+    gulp.watch(['**/*', '!_site/**', '!node_modules/**'], ['jekyll-rebuild']);
 });
 
 gulp.task('default', ['browser-sync', 'watch']);
