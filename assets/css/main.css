@@ -1787,6 +1787,9 @@ body:not(.post-template) .post-title {
 .post-footer {
   margin-top: 8rem; }
 
+.gist .markdown-body {
+  padding: 15px; }
+
 .nav .subscribe-button {
   color: #B8B8B8 !important;
   border: 1px solid rgba(255, 255, 255, 0.2);
