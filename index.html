@@ -17,15 +17,11 @@ cover: false
     <section class="post-excerpt">
         {{ post.excerpt }} <a href="{{ post.url }}" class="read-more" rel="nofollow">Continue Reading.</a>
     </section>
+    {% if post.categories.size > 0 %}
     <footer class="post-meta">
-        {{ site.name }}
-        {% if post.categories.size > 0 %}
-            {{ post.categories | array_to_sentence_string | prepend: 'on ' }}
-        {% endif %}
-        <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
-            {{ post.date | date_to_string }}
-        </time>
+        {{ post.categories | array_to_sentence_string | prepend: 'Published in ' }}
     </footer>
+    {% endif %}
 </article>
 
 {% endfor %}
