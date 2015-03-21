@@ -1,5 +1,5 @@
 ---
-title: Style Guide
+title: Style Test
 permalink: /styleguide/
 cover: 'https://demo.ghost.io/content/images/2014/09/testimg-cover.jpg'
 ---
