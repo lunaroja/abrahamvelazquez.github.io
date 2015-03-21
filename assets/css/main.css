@@ -1803,3 +1803,6 @@ body:not(.post-template) .post-title {
   @media only screen and (max-width: 500px) {
     .home-template .main-header {
       background-image: url('../images/index_small.jpg'); } }
+
+.site-footer {
+  border-top: none; }
