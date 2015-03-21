@@ -194,6 +194,10 @@ Isn't it beautiful.
 
 -----
 
+# Example content
+
+[Source](http://demo.getpoole.com/2014/01/01/example-content/)
+
 <p class="message">
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 </p>
