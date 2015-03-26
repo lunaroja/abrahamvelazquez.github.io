@@ -11,6 +11,3 @@ npm install --global gulp
 
 npm install && gulp
 ```
-
-## Forking this project
-You are welcome to fork this project. Feel free to file any issues or questions that you might have. I retain the copyright to all the content, but the source code is [MIT Licensed](http://opensource.org/licenses/MIT). *Enjoy!*
