@@ -52,6 +52,6 @@ menu:
     href: mailto:hola@abraham.mx
 
 prose:
-	rooturl: '_posts'
-	siteurl: 'http://abraham.mx'
+    rooturl: '_posts'
+    siteurl: 'http://abraham.mx'
     media: 'assets/images'
