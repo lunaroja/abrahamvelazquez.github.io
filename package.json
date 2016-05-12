@@ -8,11 +8,11 @@
   },
   "author": "Abraham Velazquez",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^3.8.8",
-    "gulp-sass": "^0.7.3",
-    "browser-sync": "^1.3.7",
-    "gulp-autoprefixer": "^1.0.0"
+  "dependencies": {
+    "browser-sync": "^2.12.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.1"
   },
   "repository": {
     "type": "git",
