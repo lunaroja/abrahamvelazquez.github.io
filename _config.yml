@@ -14,6 +14,8 @@ markdown: redcarpet
 highlighter: pygments
 paginate: 15
 
+gems: [jekyll-paginate, jekyll-gist]
+
 defaults:
   -
     scope:
