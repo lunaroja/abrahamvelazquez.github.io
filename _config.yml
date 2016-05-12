@@ -10,7 +10,7 @@ permalink: /:year/:month/:title
 exclude: ["node_modules", "gulpfile.js", "package.json", "README.md"]
 
 google_analytics: 'UA-2125211-19'
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 paginate: 15
 
