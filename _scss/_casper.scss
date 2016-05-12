@@ -873,20 +873,22 @@ body.nav-opened .menu-button .word {
 .no-cover.main-header {
     min-height: 160px;
     max-height: 40vh;
-    background: #f5f8fa;
+    // Switched to dark background
+    // background: #f5f8fa;
+    background-color: #3e3e3e;
 }
 
 .no-cover .page-title {
-    color: rgba(0,0,0,0.8);
+    // color: rgba(0,0,0,0.8);
 }
 
 .no-cover .page-description {
-    color: rgba(0,0,0,0.5);
+    // color: rgba(0,0,0,0.5);
 }
 
 .no-cover .main-nav.overlay .menu-button {
-    color: rgba(0,0,0,0.4);
-    border-color: rgba(0,0,0,0.3);
+    // color: rgba(0,0,0,0.4);
+    // border-color: rgba(0,0,0,0.3);
 }
 
 /* Add subtle load-in animation for content on the home page */
