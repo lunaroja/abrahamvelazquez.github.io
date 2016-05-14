@@ -7,7 +7,7 @@ permalink: /resume/
 
 Skills: JavaScript (ES5/ES6, Node.js), CSS3/Sass, HTML5 (Localization and Accessibility)
 
-Lead Front End Developer, on a wide variety of consumer focused sites, apps and internal frameworks.
+Lead Front End Developer, on a wide variety of consumer focused sites, apps and frameworks.
 
 Fluent in Spanish
 
@@ -17,13 +17,13 @@ Fluent in Spanish
 Engineer at [Dropbox](http://dropbox.com/)
 
 **Apple** *August 2013 – April 2016*  
-Lead Front End Developer at [Apple](http://apple.com/)
+Senior Front End Developer at [Apple](http://apple.com/)
 
 Lead Front-End Developer on many of product marketing sites for Apple.com, including [iPhone 6s](https://www.apple.com/iphone-6s/) and [Apple Music](https://www.apple.com/music/).
 
 Worked on various internal infrastructure projects, including Sass frameworks, Build Tools/System and JS libraries, lead training efforts that increased developer efficiency. Helped shape the direction of apple.com with a focus on mobile, performance and accessibility. Mentored, trained and interviewed many other developers to strengthen and grow several teams.
 
-Managed projects and worked closely with Art Director and Producers to manage high pressure timelines, while delivering beautiful experiences fitting of Apple brand. Worked with production artists and QA leads to focus on performance ensure ensure that every detail lived up the quality and standards needed to "surprise and delight" our customers.
+Managed projects and worked closely with Art Director and Producers to manage high pressure timelines, while delivering beautiful experiences fitting of Apple's brand. Worked with production artists and QA leads to focus on performance ensure ensure that every detail lived up the quality and standards needed to "surprise and delight" customers.
 
 **R/GA** *August 2011 – August 2013*  
 Open Standards Developer
