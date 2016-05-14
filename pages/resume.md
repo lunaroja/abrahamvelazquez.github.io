@@ -21,7 +21,7 @@ Senior Front End Developer at [Apple](http://apple.com/)
 
 Lead Front-End Developer on many of product marketing sites for Apple.com, including [iPhone 6s](https://www.apple.com/iphone-6s/) and [Apple Music](https://www.apple.com/music/).
 
-Worked on various internal infrastructure projects, including Sass frameworks, Build Tools/System and JS libraries, lead training efforts that increased developer efficiency. Helped shape the direction of apple.com with a focus on mobile, performance and accessibility. Mentored, trained and interviewed many other developers to strengthen and grow several teams.
+Worked on various internal infrastructure projects, including Sass frameworks, Build tools and JS libraries, lead training efforts that increased developer efficiency. Helped shape the direction of apple.com with a focus on mobile, performance and accessibility. Mentored, trained and interviewed many other developers to strengthen and grow several teams.
 
 Managed projects and worked closely with Art Director and Producers to manage high pressure timelines, while delivering beautiful experiences fitting of Apple's brand. Worked with production artists and QA leads to focus on performance ensure ensure that every detail lived up the quality and standards needed to "surprise and delight" customers.
 
