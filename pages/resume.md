@@ -5,7 +5,7 @@ permalink: /resume/
 
 #### Skills
 
-Skills: JavaScript (ES5/ES6, Node.js), CSS3/Sass, HTML5 (Localization and Accessibility)
+Skills: JavaScript (ES5/ES6, Node.js), CSS/Sass, HTML (Localization and Accessibility)
 
 Lead Front End Developer, on a wide variety of consumer focused sites, apps and frameworks.
 
