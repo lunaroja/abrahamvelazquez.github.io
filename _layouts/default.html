@@ -25,10 +25,7 @@
 
   <div class="site-wrapper">
 
-    <header {% if page.cover != '' and page.cover != null %}style="background-image: url({{ page.cover }})"{% endif %}
-      class="main-header
-        {% if page.layout != 'home' %}post-head{% endif %}
-        {% if page.cover == null %}no-cover{% endif %}">
+    <header class="main-header {% if page.layout != 'home' %}post-head{% endif %} {% if page.layout != 'home' %}no-cover{% endif %}">
       <nav class="main-nav {% if page.cover or page.layout == 'home' %}overlay{% endif %} clearfix">
           <a class="menu-button" href="#menu" aria-lable="Menu"><span class="burger">☰</span><span class="word">Menu</span></a>
       </nav>
@@ -37,6 +34,7 @@
       <div class="vertical">
           <div class="main-header-content inner">
               <h1 class="page-title">{{ site.name }}</h1>
+              <h2 class="page-description">{{ site.subtitle }}</h1>
           </div>
       </div>
       <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>

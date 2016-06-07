@@ -1,5 +1,6 @@
 name: 'Abraham Velázquez Tello'
-description: 'Engineer Dropbox | Previously '
+subtitle: 'Mexican Developer and Designer living in San Francisco'
+description: 'Engineer Dropbox • Previously '
 logo: '//gravatar.com/avatar/8ed5818f87bbd8bf79e7b36c440e45b9?s=200'
 url: 'http://abraham.mx'
 sourcecode: 'https://github.com/abrahamvelazquez/abrahamvelazquez.github.io'
@@ -31,6 +32,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+      cover: null
       post_class: "page-template"
 
 menu:

@@ -1,7 +1,6 @@
 ---
-title: Style Test
+title: Style Guide
 permalink: /styleguide/
-cover: 'https://demo.ghost.io/content/images/2014/09/testimg-cover.jpg'
 ---
 
 [Source](https://demo.ghost.io/style-test/ "Permalink to A Full Style Test")
@@ -114,27 +113,27 @@ And here's a bit of trailing text.
 
 ## Text-level semantics
 
-The a element example   
-The abbr element and abbr element with title examples   
-The **b element** example   
-The cite element example   
-The `code element` example   
-The <del>del element</del> example   
-The dfn element and dfn element with title examples   
-The _em element_ example   
-The _i element_ example   
-The ins element example   
-The kbd element example   
-The mark element example   
-The q element inside a q element example   
-The <s>s element</s> example   
-The samp element example   
-The small element example   
-The span element example   
-The **strong element** example   
-The sub element example   
-The sup element example   
-The var element example   
+The a element example
+The abbr element and abbr element with title examples
+The **b element** example
+The cite element example
+The `code element` example
+The <del>del element</del> example
+The dfn element and dfn element with title examples
+The _em element_ example
+The _i element_ example
+The ins element example
+The kbd element example
+The mark element example
+The q element inside a q element example
+The <s>s element</s> example
+The samp element example
+The small element example
+The span element example
+The **strong element** example
+The sub element example
+The sup element example
+The var element example
 The _u element_ example
 
 * * *
