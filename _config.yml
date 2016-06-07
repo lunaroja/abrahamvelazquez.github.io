@@ -1,18 +1,19 @@
 name: 'Abraham Velázquez Tello'
-description: 'Eng @Dropbox | Previously '
+description: 'Engineer Dropbox | Previously '
 logo: '//gravatar.com/avatar/8ed5818f87bbd8bf79e7b36c440e45b9?s=200'
 url: 'http://abraham.mx'
 sourcecode: 'https://github.com/abrahamvelazquez/abrahamvelazquez.github.io'
 
 baseurl: /
-permalink: /:year/:month/:title
+permalink: /blog/:title/
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "README.md"]
 
 google_analytics: 'UA-2125211-19'
 markdown: kramdown
 highlighter: rouge
-paginate: 15
+paginate: 5
+paginate_path: "/blog/:num/"
 
 gems: [jekyll-paginate, jekyll-gist]
 
@@ -23,34 +24,42 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      post_class: "post-template"
   -
     scope:
       path: "pages"
       type: "pages"
     values:
       layout: "page"
+      post_class: "page-template"
 
 menu:
-  -
-    title: About
-    href: /hola/
   -
     title: Résumé
     href: /resume/
   -
+    title: Blog
+    href: /blog/
+  -
     title: Twitter
     href: https://twitter.com/lunaroja
-  -
-    title: LinkedIn
-    href: https://www.linkedin.com/in/abrahamvelazqueztello
   -
     title: GitHub
     href: https://github.com/abrahamvelazquez
   -
+    title: Instagram
+    href: https://instagram.com/lunaroja
+  -
+    title: Facebook
+    href: https://facebook.com/abrahamvelazquez
+  -
+    title: LinkedIn
+    href: https://www.linkedin.com/in/abrahamvelazqueztello
+  -
     title: CodePen
     href: http://codepen.io/abrahamvelazquez
   -
-    title: Contact
+    title: Email
     href: mailto:hola@abraham.mx
 
 prose:

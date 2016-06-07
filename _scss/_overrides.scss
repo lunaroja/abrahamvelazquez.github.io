@@ -23,6 +23,23 @@
 }
 .post-footer {
   margin-top: 8rem;
+  max-width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  @media only screen and (max-width: 500px) {
+      width: auto;
+      margin-left: 16px;
+      margin-right: 16px;
+  }
+  .post & {
+    width: auto;
+    @media only screen and (max-width: 500px) {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+  }
 }
 .site-footer {
   border-top: none;

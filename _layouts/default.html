@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  {% if page.title == 'Home' %}
+  {% if page.layout == 'home' %}
     <title>{{ site.name }}</title>
     <meta name="description" content="{{ site.description }}" />
   {% else %}
@@ -21,30 +21,22 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/main.css" />
 
 </head>
-<body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %} nav-closed">
+<body class="{% if page.post_class %}{{page.post_class}}{% endif %} {% if page.layout == 'home' %}home-template{% endif %} nav-closed">
 
   <div class="site-wrapper">
 
     <header {% if page.cover != '' and page.cover != null %}style="background-image: url({{ page.cover }})"{% endif %}
       class="main-header
-        {% if page.title != 'Home' %}post-head{% endif %}
+        {% if page.layout != 'home' %}post-head{% endif %}
         {% if page.cover == null %}no-cover{% endif %}">
-      <nav class="main-nav {% if page.cover or page.title == 'Home' %}overlay{% endif %} clearfix">
-          {% if page.title == 'Home' %}
-              <a class="blog-logo" href="{{ site.baseurl }}">
-                <img src="{{ site.logo }}" alt="Home" />
-              </a>
-          {% endif %}
+      <nav class="main-nav {% if page.cover or page.layout == 'home' %}overlay{% endif %} clearfix">
           <a class="menu-button" href="#menu" aria-lable="Menu"><span class="burger">☰</span><span class="word">Menu</span></a>
       </nav>
 
-    {% if page.title == 'Home' %}
+    {% if page.layout == 'home' %}
       <div class="vertical">
           <div class="main-header-content inner">
               <h1 class="page-title">{{ site.name }}</h1>
-              {% if site.description %}
-                  <h2 class="page-description">{{ site.description }}</h2>
-              {% endif %}
           </div>
       </div>
       <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>

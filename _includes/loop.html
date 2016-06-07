@@ -3,21 +3,23 @@
 </div>
 
 {% for post in paginator.posts %}
-
-<article class="post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    </header>
-    <section class="post-excerpt">
-        {{ post.excerpt }} <a href="{{ post.url }}" class="read-more" rel="nofollow">Continue Reading.</a>
-    </section>
-    {% if post.categories.size > 0 %}
-    <footer class="post-meta">
-        {{ post.categories | array_to_sentence_string | prepend: 'Published in ' }}
-    </footer>
-    {% endif %}
-</article>
-
+    <article class="post">
+        <header class="post-header">
+            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </header>
+        <section class="post-excerpt">
+            {{ post.excerpt }} <a href="{{ post.url }}" class="read-more" rel="nofollow">Continue Reading.</a>
+        </section>
+        {% if post.categories.size > 0 %}
+        <footer class="post-meta">
+            {{ post.categories | array_to_sentence_string | prepend: 'Published in ' }}
+        </footer>
+        {% endif %}
+    </article>
 {% endfor %}
 
+{% include  post-footer.html %}
+
 {% include pagination.html %}
+
+
