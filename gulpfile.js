@@ -1,13 +1,19 @@
-var gulp        = require('gulp');
+var gulp = require('gulp');
 var browserSync = require('browser-sync');
-var sass        = require('gulp-sass');
-var prefix      = require('gulp-autoprefixer');
-var cp          = require('child_process');
+var sass = require('gulp-sass');
+var prefix = require('gulp-autoprefixer');
+var child_process = require('child_process');
+var del = require('del');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
+gulp.task('clean', function () {
+  return del([
+    '_site'
+  ]);
+});
 gulp.task('sass', function () {
     return gulp.src('_scss/main.scss')
         .pipe(sass({
@@ -21,9 +27,9 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('_site/assets/css'));
 });
 
-gulp.task('jekyll-build', function (done) {
+gulp.task('jekyll-build', ['clean'], function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+    return child_process.spawn('jekyll', ['build'], {stdio: 'inherit'})
         .on('close', done);
 });
 
