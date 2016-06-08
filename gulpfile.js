@@ -21,7 +21,7 @@ gulp.task('sass', function () {
             outputStyle: 'compressed',
             onError: browserSync.notify
         }))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8'], { cascade: true }))
+        .pipe(prefix(['last 2 versions']))
         .pipe(gulp.dest('assets/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('_site/assets/css'));
@@ -39,21 +39,6 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
-        notify: {
-            styles: [
-                'display: none; ',
-                'pointer-events: none',
-                'padding: 6px 15px 3px;',
-                'position: fixed;',
-                'font-size: 0.8em;',
-                'z-index: 9999;',
-                'left: 0px;',
-                'bottom: 0px;',
-                'color: rgb(74, 74, 74);',
-                'background-color: rgb(17, 17, 17);',
-                'color: rgb(229, 229, 229);'
-            ]
-        },
         server: {
             baseDir: '_site'
         }

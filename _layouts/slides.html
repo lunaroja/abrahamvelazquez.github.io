@@ -25,7 +25,13 @@
         <section data-markdown data-separator="^\n---\n$">
             <script type="text/template">
 # {{ page.title }}
-**{{ page.date | | date: "%A, %B %d, %Y" }}**
+**{{ page.date | date: "%A, %B %d, %Y" }}**
+
+---
+
+## {{ site.name }}
+
+{{ site.description }}
 
 ---
 
