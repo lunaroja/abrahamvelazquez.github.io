@@ -14,9 +14,9 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/reveal.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/theme/{%if page.theme %}{{ page.theme }}{% else %}white{% endif %}.css" id="theme"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/lib/css/zenburn.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/slides.css" />
     <script>
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
@@ -43,12 +43,8 @@
         progress: true,
         history: true,
         center: true,
-        {%if page.transition %}
-          transition: '{{page.transition}}',
-        {% else %}
-          transition: 'slide', // none/fade/slide/convex/concave/zoom
-        {% endif %}
-        // Optional reveal.js plugins
+        transition: '{{page.transition}}',
+        transition: 'fade',
         dependencies: [
           { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },

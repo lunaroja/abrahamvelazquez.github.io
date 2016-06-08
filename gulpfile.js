@@ -15,7 +15,7 @@ gulp.task('clean', function () {
   ]);
 });
 gulp.task('sass', function () {
-    return gulp.src('_scss/main.scss')
+    return gulp.src('_scss/*.scss')
         .pipe(sass({
             includePaths: ['scss'],
             outputStyle: 'compressed',
