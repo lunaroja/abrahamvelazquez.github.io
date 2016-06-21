@@ -56,16 +56,21 @@
 }
 
 .home-template {
-  .main-header {
-    background-image: url('../images/index_small.jpg');
-    @media only screen and (min-width: 736px) {
-      background-image: url('../images/index_medium.jpg');
+  .main-header-image {
+    opacity: 0;
+    &.loaded {
+      opacity: 1;
+      transition: 4s ease-in-out;
     }
-    @media only screen and (min-width: 1440px) {
-      background-image: url('../images/index_large.jpg');
-    }
+    background-color: #333;
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    -webkit-filter: blur(25px) saturate(1.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
-}
-.site-footer {
-  border-top: none;
 }

@@ -88,6 +88,18 @@
             $("body").toggleClass("nav-opened nav-closed");
         });
 
+        var user = 'lunaroja';
+        var $image = $('.main-header-image');
+        $.ajax({
+          dataType: "jsonp",
+          url: 'https://jsonp.afeld.me/?url=https://www.instagram.com/' + user + '/media/',
+          success: function(reponse) {
+            var rand = Math.floor(Math.random()*20);
+            var image = reponse.items[rand].images.low_resolution.url.replace('320x320', '1080x1080');
+            $image.css({'background-image': 'url(' + image +')'}).addClass('loaded');
+          }
+        });
+
     });
 
     // Arctic Scroll by Paul Adam Davis
