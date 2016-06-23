@@ -88,17 +88,21 @@
             $("body").toggleClass("nav-opened nav-closed");
         });
 
-        var user = 'lunaroja';
+        var id = '35581';
+        var token = '35581.71f3d8d.ce32333f83b14fb296a7b61c3a414152'
         var $image = $('.main-header-image');
         $.ajax({
           dataType: "jsonp",
-          url: 'https://jsonp.afeld.me/?url=https://www.instagram.com/' + user + '/media/',
-          success: function(reponse) {
+          url: 'https://api.instagram.com/v1/users/' + id + '/media/recent/?access_token=' + token,
+          success: function(response) {
+            console.log(response)
             var rand = Math.floor(Math.random()*20);
-            var image = reponse.items[rand].images.low_resolution.url.replace('320x320', '1080x1080');
+            var image = response.data[rand].images.low_resolution.url.replace('320x320', '1080x1080');
             $image.css({'background-image': 'url(' + image +')'}).addClass('loaded');
           }
         });
+
+
 
     });
 
