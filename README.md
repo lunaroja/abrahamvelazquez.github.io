@@ -6,7 +6,7 @@ This is my personal website. It’s generated with Jekyll on GitHub Pages and us
 To develop locally it uses [Jekyll](http://jekyllrb.com/), [NPM](https://docs.npmjs.com/getting-started/installing-node), [Gulp](http://gulpjs.com/), [LibSass](http://libsass.org/), [Autoprefixer](https://github.com/postcss/autoprefixer) and [BrowserSync](http://www.browsersync.io/)
 
 ```sh
-gem install jekyll
+gem install jekyll jekyll-paginate jekyll-gist
 npm install --global gulp
 
 npm install && gulp
