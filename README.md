@@ -11,3 +11,5 @@ npm install --global gulp
 
 npm install && gulp
 ```
+
+Running jekyll projects on Cloud9 requires this ```jekyll serve -H $IP -P $PORT --baseurl ""``` command in the terminal.
