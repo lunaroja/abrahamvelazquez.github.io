@@ -12,7 +12,7 @@
 
         $(".scroll-down").arctic_scroll();
 
-        $(".menu-button, .nav-cover, .nav-close").on("click", function(e){
+        $(".menu-button, .nav-cover, .nav-close").on("click", function(e) {
             e.preventDefault();
             $("body").toggleClass("nav-opened nav-closed");
         });
@@ -23,7 +23,7 @@
         $.ajax({
           dataType: "jsonp",
           url: 'https://api.instagram.com/v1/users/' + id + '/media/recent/?access_token=' + token,
-          error: function(response){
+          error: function(response) {
             console.log(response)
             $image.css({'background-image': 'url(/assets/images/index_large.jpg)'}).addClass('loaded');
           },
