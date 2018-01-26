@@ -29,7 +29,7 @@
           },
           success: function(response) {
             var rand = Math.floor(Math.random() * response.data.length);
-            var image = response.data[rand].images.low_resolution.url.replace('320x320', '1080x1080');
+            var image = response.data[rand].images.standard_resolution.url;
             $image.css({'background-image': 'url(' + image +')'}).addClass('loaded');
           }
         });
