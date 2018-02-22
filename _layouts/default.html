@@ -13,12 +13,12 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
 
-  <link rel="shortcut icon" href="{{ site.baseurl }}favicon.ico" />
+  <link rel="shortcut icon" href="/favicon.ico" />
 
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% endif %} {% if page.layout == 'home' %}home-template{% endif %} nav-closed">
@@ -57,19 +57,19 @@
   </div>
 
   <div class="nav" id="menu">
-    <h3 class="nav-title"><a href="{{ site.baseurl }}">Home</a></h3>
+    <h3 class="nav-title"><a href="/">Home</a></h3>
     <a href="#menu-close" class="nav-close" aria-lable="Close"></a>
     <ul>
       {% for link in site.menu %}
         <li role="presentation"><a href="{{ link.href }}">{{ link.title }}</a></li>
       {% endfor %}
     </ul>
-    <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="/feed.xml">Subscribe</a>
   </div>
   <span class="nav-cover"></span>
 
   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="{{ site.baseurl }}assets/js/index.js"></script>
+  <script type="text/javascript" src="/assets/js/index.js"></script>
 
   {% if site.google_analytics %}
   <script type="text/javascript">
