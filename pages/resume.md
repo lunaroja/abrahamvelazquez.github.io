@@ -11,7 +11,7 @@ Lead Front End Developer, on a wide variety of webapps, consumer focused sites a
 
 Speaker and presenter on various topics in development and design.
 
-Volunteer teacher for various workshops and technical classes for minority youth.
+Volunteer teacher for various workshops and technical classes for underserved youth.
 
 Fluent in Spanish
 
