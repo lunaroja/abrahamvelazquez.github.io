@@ -5,16 +5,21 @@ permalink: /resume/
 
 #### Skills
 
-JavaScript (ES5/ES6, Node.js), CSS/Sass, HTML (Localization and Accessibility) Lead Front End Developer, on a wide variety of consumer focused sites, apps and frameworks.
+JavaScript (TypeScript/React), CSS/Sass, HTML (Accessibility/Internationalization), Python, PHP
 
-Speaker and presenter on various topics in development and design. Volunteer teacher for various workshops and technical classes for minority youth.
+Lead Front End Developer, on a wide variety of webapps, consumer focused sites and frameworks.
+
+Speaker and presenter on various topics in development and design.
+
+Volunteer teacher for various workshops and technical classes for minority youth.
 
 Fluent in Spanish
 
 #### Experience
 
 **Dropbox** *May 2016 – Present*
-Engineer at [Dropbox](http://dropbox.com/)
+Senior Front-End Engineer at [Dropbox](http://dropbox.com/)
+At Dropbox, I've worked on multiple key surfaces to enhance the quality, stability and performance of the product. From focusing performance to work towards ambitious TTI goals to leading the mobile/responsive efforts on the most visited products on dropbox.com. Iterated and improved processes for multiple teams and disciplines, including Product Managers, Designers and QA, to ensure collaboration and to drive impact on the product and experience. Mentored, trained and interviewed engineers to ensure best practices.
 
 **Apple** *August 2013 – April 2016*
 Senior Front End Developer at [Apple](http://apple.com/)
