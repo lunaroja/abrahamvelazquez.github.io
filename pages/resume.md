@@ -7,7 +7,7 @@ permalink: /resume/
 
 JavaScript (TypeScript/React), CSS/Sass, HTML (Accessibility/Internationalization), Python, PHP
 
-Lead Front End Developer, on a wide variety of webapps, consumer focused sites and frameworks.
+Lead Front End Developer, on a wide variety of web apps, consumer focused sites and frameworks.
 
 Speaker and presenter on various topics in development and design.
 
